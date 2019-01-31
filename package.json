@@ -1,0 +1,41 @@
+{
+  "name": "bump-prerelease-version",
+  "version": "1.0.0",
+  "description": "Bump your prerelease version",
+  "license": "MIT",
+  "repository": "github:cesconix/bump-prerelease-version",
+  "homepage": "https://github.com/cesconix/bump-prerelease-version#readme",
+  "bugs": "https://github.com/cesconix/bump-prerelease-version/issues",
+  "keywords": [
+    "git",
+    "tag",
+    "prerelease",
+    "bump",
+    "version",
+    "cli",
+    "cicd"
+  ],
+  "author": "Francesco Pasqua <cesconix@me.com>",
+  "main": "./index.js",
+  "preferGlobal": true,
+  "engines": {
+    "node": ">=8"
+  },
+  "bin": {
+    "bump-prerelease-version": "./index.js"
+  },
+  "scripts": {
+    "test": "standard"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "ora": "^3.0.0",
+    "semver": "^5.6.0",
+    "simple-git": "^1.107.0",
+    "yargs": "^12.0.5"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1",
+    "standard-version": "^4.4.0"
+  }
+}
