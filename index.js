@@ -45,6 +45,7 @@ const argv = yargs
 
     const matchedTags = tags.all
       .filter(tag => tag.startsWith(fullTag))
+      .map(tag => tag.split(argv.prefix).join(''))
       .sort((a, b) => semver.compare(a, b))
 
     if (matchedTags.length === 0) {
